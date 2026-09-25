@@ -12,9 +12,9 @@ spatial interpolation.
 
 ### Historical data
 
-Historical environmental conditions were obtained from the **EC-Earth3-ESM-1** model under the `esm-hist` experiment and ensemble member `r1i1p1f1`. Model output was extracted from the BSC EC-Earth archive for the period **1975–2014**.
+Historical environmental conditions were obtained from the **EC-Earth3-ESM-1** model under the `esm-hist` experiment calculated as the mean and standard deviation of three ensemble members (`r1i1p1f1`, `r2i1p1f1`, `r3i1p1f1`). Model output was extracted from the BSC EC-Earth archive for the period **1975–2014**.
 
-Monthly variables were retained at their original temporal resolution, resulting in **480 monthly time steps** over the 30-year historical period. 
+Monthly variables were retained at their original temporal resolution, resulting in **480 monthly time steps** over the 40-year historical period. 
 
 The historical dataset comprises the following environmental and biogeochemical variables:
 
