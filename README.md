@@ -1,26 +1,20 @@
 ## Data description
 
-Environmental and biogeochemical data for the **Clarion–Clipperton Zone (CCZ)** 
-and the surrounding region were extracted from simulations of the **EC Earth System Model**.
-
-The extraction region, hereafter referred to as **CCZ+10**, extends from:
-
-- **Longitude:** 170°W to 100°W
-- **Latitude:** 10°S to 30°N
+Environmental and biogeochemical data for the **global ocean bottom layer** were extracted from simulations of the **EC Earth System Model**.
 
 Data were retained on the native curvilinear EC-Earth ocean grid, without 
 spatial interpolation. The ocean components of the EC-Earth models use the NEMO ocean model
 on the ORCA1 native curvilinear grid, with an approximate horizontal
-resolution of 1° and 75 vertical levels. Because the grid is
+resolution of 1°. Because the grid is
 curvilinear, the exact horizontal resolution varies spatially. The
-extracted CCZ+10 data were retained on this native model grid without
+extracted data were retained on this native model grid without
 spatial interpolation.
 
 ### Historical data
 
-Historical environmental conditions were obtained from the **EC-Earth3-ESM-1** model under the `esm-hist` experiment and ensemble member `r1i1p1f1`. Model output was extracted from the BSC EC-Earth archive for the period **1985–2014**.
+Historical environmental conditions were obtained from the **EC-Earth3-ESM-1** model under the `esm-hist` experiment and ensemble member `r1i1p1f1`. Model output was extracted from the BSC EC-Earth archive for the period **1975–2014**.
 
-Monthly variables were retained at their original temporal resolution, resulting in **360 monthly time steps** over the 30-year historical period. Global model fields were first restricted to the **CCZ+10** domain while preserving the native model grid.
+Monthly variables were retained at their original temporal resolution, resulting in **480 monthly time steps** over the 30-year historical period. 
 
 The historical dataset comprises the following environmental and biogeochemical variables:
 
