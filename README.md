@@ -37,38 +37,3 @@ The historical dataset comprises the following environmental and biogeochemical 
 
 For variables represented throughout the water column, processed historical products contain **bottom-layer conditions**. Variables intrinsically defined at a particular depth or without a vertical dimension were retained according to their model definition.
 
-### Future projections
-
-Future environmental conditions were obtained from **EC-Earth3-CC ScenarioMIP** simulations for ensemble member `r1i1p1f1`. Two future forcing scenarios were considered: **SSP2-4.5** (`ssp245`), representing an intermediate forcing pathway, and **SSP5-8.5** (`ssp585`), representing a very high forcing pathway. The corresponding BSC EC-Earth experiments were `a368` for SSP2-4.5 and `a2zo` for SSP5-8.5.
-
-For each scenario, environmental conditions were extracted for two target years, **2050** and **2100**, resulting in four scenario–year combinations:
-
-| Model | Scenario | Year | Ensemble member |
-|---|---|---:|---|
-| EC-Earth3-CC | SSP2-4.5 | 2050 | `r1i1p1f1` |
-| EC-Earth3-CC | SSP2-4.5 | 2100 | `r1i1p1f1` |
-| EC-Earth3-CC | SSP5-8.5 | 2050 | `r1i1p1f1` |
-| EC-Earth3-CC | SSP5-8.5 | 2100 | `r1i1p1f1` |
-
-The future dataset currently contains 13 variables:
-
-- `dfe`
-- `dissic`
-- `epcalc100`
-- `expc`
-- `no3`
-- `o2`
-- `ph`
-- `phyc`
-- `po4`
-- `si`
-- `so`
-- `talk`
-- `thetao`
-
-Nine variables (`dfe`, `dissic`, `epcalc100`, `expc`, `no3`, `phyc`, `si`, `so`, and `thetao`) were available as monthly ocean output (`Omon`). All 12 monthly values were retained for each target year; no annual or seasonal temporal averaging was applied.
-
-Four variables (`o2`, `ph`, `po4`, and `talk`) were available as annual ocean output (`Oyr`). These variables therefore contain one model time step for each target year. No additional temporal averaging was performed during extraction.
-
-For variables containing a vertical `lev` dimension, **bottom conditions** were defined as the deepest valid wet model cell at each horizontal grid location. The deepest valid cell was identified independently for each location, thereby accounting for spatial variation in model bathymetry across the CCZ+10 domain. No vertical averaging was performed. Variables without a vertical dimension were retained according to their native model definition.
-
